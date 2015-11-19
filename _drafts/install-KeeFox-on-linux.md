@@ -57,5 +57,18 @@ Interface > Minimize to tray instead of taskbar
 
 Integration > Single click instead of double click for default tray icon (we are not on windows checked)
 
+
+## KeePass for chrome
+
+déconseillé chrome 
+
+https://chrome.google.com/webstore/detail/chromeipass/ompiailgknfdndiefoaoiligalphfdae
+
 ## Sharing KeePass
 
+http://sourceforge.net/projects/webkeepass/
+https://github.com/sukria/WebKeePass
+
+https://www.lisenet.com/2013/installing-webkeepass-on-a-debian-wheezy-server/
+https://www.howtoforge.com/how-to-set-up-a-web-based-enterprise-password-manager-protected-by-two-factor-authentication
+http://blog.sukria.net/2013/08/27/webkeepass-or-how-to-build-your-own-cloud-aware-keyring/
