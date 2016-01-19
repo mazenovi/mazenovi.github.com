@@ -235,3 +235,18 @@ nmap -sV -O -PN 172.16.76.0/24
 
 
 Marvelous isn't it?
+
+# EDIT 2016-01-19
+
+After trying to move my VMs on another machine, I discover that vmware don't setup the same subnet for "vmnet8" at each install.
+So if you have some exported VMs (as ova file for example) with some hardcoded IP (in /etc/network/interface, /etc/hosts or any other files where IP is used) you have to setup the used subnet for "vmnet8" bridge access. You can do it by executing
+
+{% highlight bash %}
+
+sudo /usr/lib/vmware/bin/vmware-netcfg
+
+{% endhighlight %}
+
+and check the field "Subnet IP:" is the one you use in your ova files
+
+![vmware-netcfg](/images/vmware-netcfg.png "vmware-netcfg")
