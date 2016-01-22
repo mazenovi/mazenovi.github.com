@@ -250,3 +250,18 @@ sudo /usr/lib/vmware/bin/vmware-netcfg
 and check the field "Subnet IP:" is the one you use in your ova files
 
 ![vmware-netcfg](/images/vmware-netcfg.png "vmware-netcfg")
+
+# EDIT 2016-01-22
+
+if you use windows vmware-netcfg is missing. Fortunaltely there's a post explaining [How to Use the Missing Virtual Network Editor in VMware Player](http://www.doublecloud.org/2013/03/how-to-use-the-missing-virtual-network-editor-in-vmware-player/) in a nutshell:
+
+* open a ommand prompt as Adminitrator
+    * right-click on the command prompt icon in the Windows start menu and select **Run As Administrator** from the available options
+
+* type
+
+{% highlight bash %}
+
+rundll32.exe vmnetui.dll VMNetUI_ShowStandalone
+
+{% endhighlight %}
